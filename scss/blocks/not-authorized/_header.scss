@@ -1,0 +1,44 @@
+.header {
+    margin-bottom: 20px;
+    @media screen and (max-width: 480px) {
+        margin-bottom: 50px;
+    }
+
+    /* .header__container */
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 50px 15px;
+        @media screen and (max-width: 480px) {
+            padding: 30px 15px;
+        }
+    }
+
+    /* .header__logo */
+
+    &__logo {
+        @media screen and (max-width: 480px) {
+            width: 60px;
+            height: 60px;
+        }
+    }
+
+    /* .header__auth */
+
+    &__auth {
+        display: flex;
+        gap: 25px;
+        @media screen and (max-width: 480px) {
+            gap: 15px;
+        }
+    }
+}
+.headeer {
+
+    /* .headeer__auth-btn */
+
+    &__auth-btn {
+    }
+}

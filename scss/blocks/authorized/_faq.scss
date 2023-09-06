@@ -1,0 +1,98 @@
+.faq {
+
+    /* .faq__container */
+
+    &__container {
+    }
+
+    /* .faq__title */
+
+    &__title {
+        margin-bottom: 50px;
+    }
+
+    /* .faq__spoilers */
+
+    &__spoilers {
+        margin-bottom: 40px;
+    }
+
+    /* .faq__text */
+
+    &__text {
+        & > a {
+            color: $active;
+        }
+        & > a:hover {
+            text-decoration: underline;
+        }
+        margin-bottom: 25px;
+    }
+}
+
+
+.spoilers {
+    & > *:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+
+.spollers {
+
+    /* .spollers__item */
+
+    &__item {
+    }
+
+    /* .spollers__title */
+
+    &__title {
+        position: relative;
+        width: 100%;
+        text-align: left;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: normal;
+        padding: 25px;
+        background-color: $dark-bg;
+        border-radius: 15px;
+
+        &::before, &::after {
+            content: "";
+            width: 20px;
+            height: 2px;
+            background-color: $text;
+            position: absolute;
+            top: 50%;
+            right: 25px;
+            transition: transform 0.3s ease;
+        }
+
+        &::after {
+            transform: translateY(-50%) rotate(-90deg);
+        }
+        &._spoller-active::after {
+            transform: translateY(-50%) rotate(0deg);
+        }
+    }
+
+    /* .spollers__body */
+
+    &__body {
+        margin-top: 15px;
+        padding: 25px;
+        & > *:not(:last-child) {
+            margin-bottom: 15px;
+        }
+        border-radius: 15px;
+        background: $dark-bg;
+    }
+
+    /* .spollers__text */
+
+    &__text {
+        & > span {
+            color: $active;
+        }
+    }
+}

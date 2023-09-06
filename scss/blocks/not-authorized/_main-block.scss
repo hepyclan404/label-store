@@ -1,0 +1,134 @@
+.main-block {
+
+    /* .main-block__container */
+
+    &__container {
+    }
+
+    /* .main-block__welcome */
+
+    &__welcome {
+        text-align: center;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: normal;
+        & > span {
+            color: $active;
+        }
+        margin-bottom: 20px;
+        @media screen and (max-width: 768px) {
+            margin-bottom: 15px;
+        }
+        @media screen and (max-width: 480px) {
+            font-size: 20px;
+        }
+    }
+
+    /* .main-block__title */
+
+    &__title {
+        margin-bottom: 70px;
+        @media screen and (max-width: 768px) {
+            margin-bottom: 50px;
+        }
+    }
+
+    /* .main-block__advantages */
+
+    &__advantages {
+        margin-bottom: 70px;
+        @media screen and (max-width: 768px) {
+            margin-bottom: 50px;
+        }
+    }
+
+    /* .main-block__btns */
+
+    &__btns {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        @media screen and (max-width: 510px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    /* .main-block__btn */
+
+    &__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 222px;
+        height: 50px;
+        color: $text;
+        font-weight: 500;
+        line-height: normal;
+        gap: 15px;
+        transition: all 0.3s ease-in;
+
+        &:hover {
+            background-color: $active;
+            color: $main-color;
+        }
+        @media screen and (max-width: 510px) { 
+            width: 100%;
+        }
+    }
+
+    /* .main-block__btn-text */
+
+    &__btn-text {
+    }
+
+    /* .main-block__btn-ico */
+
+    &__btn-ico {
+    }
+}
+
+.advantages {
+
+    /* .advantages__items */
+
+    &__items {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        @media screen and (max-width: 1239px) {
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        }
+        @media screen and (max-width: 480px) {
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        }
+    }
+
+    /* .advantages__item */
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 64px 31px;
+        border-radius: 15px;
+        gap: 25px;
+        background-color: $dark-bg;
+    }
+
+    /* .advantages__item-image */
+
+    &__item-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* .advantages__item-text */
+
+    &__item-text {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: normal;
+    }
+}

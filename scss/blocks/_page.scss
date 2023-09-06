@@ -1,0 +1,106 @@
+.page {
+    /* .page__main-block */
+
+    &__main-block {
+        margin-bottom: 100px;
+
+        @media screen and (max-width: 480px) {
+            margin-bottom: 70px;
+        }
+    }
+
+    /* .page__couriers */
+
+    &__couriers {
+        margin-bottom: 100px;
+
+        @media screen and (max-width: 480px) {
+            margin-bottom: 70px;
+        }
+    }
+
+    /* .page__login */
+
+    &__login {
+        margin-bottom: 100px;
+
+        @media screen and (max-width: 480px) {
+            margin-bottom: 70px;
+        }
+    }
+
+    /* .page__registration */
+
+    &__registration {
+        margin-bottom: 100px;
+
+        @media screen and (max-width: 480px) {
+            margin-bottom: 70px;
+        }
+    }
+
+    /* .page__recovery */
+
+    &__recovery {
+        margin-bottom: 100px;
+
+        @media screen and (max-width: 480px) {
+            margin-bottom: 70px;
+        }
+    }
+
+    /* .page__deposit */
+
+    &__deposit {
+        margin-bottom: 100px;
+
+        @media screen and (max-width: 480px) {
+            margin-bottom: 70px;
+        }
+    }
+
+    /* .page__account */
+
+    &__account {
+        margin-bottom: 100px;
+
+        @media screen and (max-width: 480px) {
+            margin-bottom: 70px;
+        }
+    }
+
+    /* .page__create-label */
+
+    &__create-label {
+        margin-bottom: 100px;
+
+        @media screen and (max-width: 480px) {
+            margin-bottom: 70px;
+        }
+    }
+
+    /* .page__orders */
+
+    &__orders {
+        margin-bottom: 100px;
+
+        @media screen and (max-width: 480px) {
+            margin-bottom: 70px;
+        }
+    }
+
+    /* .page__faq */
+
+    &__faq {
+        margin-bottom: 100px;
+
+        @media screen and (max-width: 480px) {
+            margin-bottom: 70px;
+        }
+    }
+
+    /* .page__payment-succsselful */
+
+    &__payment-succsselful {
+    }
+}
